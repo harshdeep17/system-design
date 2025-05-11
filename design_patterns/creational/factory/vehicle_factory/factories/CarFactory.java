@@ -11,7 +11,7 @@ public class CarFactory implements VehicleFactory {
     }
 
     @Override
-    public Vehicle createVehicle() throws IllegalArgumentException{
+    public Vehicle createVehicle() {
         if(type == ScorpioType.N){
             return new ScorpioN();
         }else if(type == ScorpioType.CLASSIC){
